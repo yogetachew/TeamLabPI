@@ -13,7 +13,7 @@ class Node:
 # If it does there is a error test for it
 # then if the index is 0, that means it is our first data in the list, so the head get that value, if the length of the list is 0, then the list must carry both head and tail with same data\
 # if the index is anything else than 0 or the invalid ones, then the value is attribute to the box that follow the one with the index - 1, again if the tail has nothing in it, we gave it a new value
-#
+# 
 class Linkedlist:
     def __init__(self):
 
@@ -57,7 +57,7 @@ class Linkedlist:
             raise IndexError("Bounds' index is out of box")
 
         if index == 0:
-            remove_data = self.head
+            removed = self.head
             self.head = self.head.next
             if self.size == 1:
                 self.tail = None
@@ -92,9 +92,6 @@ class Linkedlist:
         while current:
             yield current.data
             current = current.next
-
-    def __len__(self):
-        return self.size
 
     def __str__(self):
         return " -> ".join(str(name) for name in self)
