@@ -11,9 +11,11 @@ class Node:
 # else the the data is assign to the end of the list.
 # the insert function, put the name with a index proper to it. In that case the index must not be nnegative or have a value greater than the length of our list
 # If it does there is a error test for it
-# then if the index is 0, that means it is our first data in the list, so the head get that value, if the length of the list is 0, then the list must carry both head and tail with same data\
+# then if the index is 0, that means it is our first data in the list, so the head get that value, if the length of the list is 0, then the list must carry both head and tail with same data
 # if the index is anything else than 0 or the invalid ones, then the value is attribute to the box that follow the one with the index - 1, again if the tail has nothing in it, we gave it a new value
-# 
+# The next function will be the remove function, it has an error control to verify if the index is incorrectly enter, or if the size of the list is 0, which means there is no data in the list,
+# if the index is correct and the list is not empty, then the value that correspond to the index is removed while the data in the next boxes are pushed toward the head
+# The find function browse the list looking for the name inserted, if find, it return the index
 class Linkedlist:
     def __init__(self):
 

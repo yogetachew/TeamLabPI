@@ -7,23 +7,23 @@ class UndoStack:
     def __init__(self):
         self.stack = []
 
-    def push(self, item):
+    def push(self, cmd):
         # Add item to top of stack
-        self.stack.append(item)
+        self.stack.append(cmd)
         
     def pop(self):
         # Remove and return top item
         if not self.is_empty():
             return self.stack.pop()
         else:
-            return " None"
+            return " Nothing were found"
 
     def peek(self):
         # Return top item without removing it
         if not self.is_empty():
             return self.stack[-1]
         else:
-            return " None"
+            return " Nothing were found "
 
     def is_empty(self):
         return len(self.stack) == 0
