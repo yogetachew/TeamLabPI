@@ -1,0 +1,11 @@
+[
+  { "type": "arrive", "name": "Ana" },
+  { "type": "arrive", "name": "Ben" },
+  { "type": "insert", "name": "Cam", "index": 1 },
+  { "type": "arrive", "name": "Dia" },
+  { "type": "insert", "name": "Eli", "index": 2 },
+  { "type": "remove", "index": 0 },
+  { "type": "remove", "index": 2 },
+  { "type": "arrive", "name": "Fay" },
+  { "type": "insert", "name": "Gia", "index": 1 }
+]
