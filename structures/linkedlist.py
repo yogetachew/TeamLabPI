@@ -45,7 +45,7 @@ class Linkedlist:
                 self.tail = new_node
         
         else:
-            prev = self.get_node(index-1)
+            prev = self._get_node(index-1)
             new_node.next = prev.next 
             prev.next = new_node
 
