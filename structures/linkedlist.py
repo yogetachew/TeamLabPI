@@ -53,15 +53,15 @@ class Linkedlist:
                 self.tail = new_node
     
     def remove(self, index):
-        if self.size == 0:
+        if self.len == 0:
             raise IndexError("This list is empty, no need to remove anything.")
-        if index < 0 or index >= self.size:
+        if index < 0 or index >= self.len:
             raise IndexError("Bounds' index is out of box")
 
         if index == 0:
             removed = self.head
             self.head = self.head.next
-            if self.size == 1:
+            if self.len == 1:
                 self.tail = None
         else:
             prev = self._get_node(index - 1)
@@ -70,7 +70,7 @@ class Linkedlist:
             if removed == self.tail:
                 self.tail = prev
 
-        self.size -= 1
+        self.len -= 1
         return removed.data
 
     def find(self, name):
