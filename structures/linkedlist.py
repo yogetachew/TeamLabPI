@@ -71,7 +71,7 @@ class Linkedlist:
                 self.tail = prev
 
         self.len -= 1
-        return removed.data
+        return removed.head
 
     def find(self, name):
         current = self.head
@@ -92,7 +92,7 @@ class Linkedlist:
     def __iter__(self):
         current = self.head
         while current:
-            yield current.data
+            yield current.head
             current = current.next
 
     def __str__(self):
