@@ -1,7 +1,7 @@
 # Create the node class to get the data /name for the linkedlist
 class Node:
     def __init__(self, data):
-        self.head = data 
+        self.data = data 
         self.next = None
 
 # Linkedlist class for the storage of the data in the list. 
@@ -71,7 +71,7 @@ class Linkedlist:
                 self.tail = prev
 
         self.len -= 1
-        return removed.head
+        return removed.data
 
     def find(self, name):
         current = self.head
@@ -92,7 +92,7 @@ class Linkedlist:
     def __iter__(self):
         current = self.head
         while current:
-            yield current.head
+            yield current.data
             current = current.next
 
     def __str__(self):
